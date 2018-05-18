@@ -1,0 +1,69 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image Search Abstraction Layer
+      </h1>
+      <h2>
+        I should really stop using this format...
+      </h2>
+    </header>
+
+    <main>
+      <p class="bold">Oh hi,</p>
+      
+      <p>I've got another api for you!</p>
+      
+      <p>
+        Use this api to make an image search that return the url, alt-text and page-url in the JSON format.<br>
+        Simple make a http request to "https://image-api-fcc.glitch.me/search/[your search]".<br>
+        This supports pagination using the query "?offset=[number]".<br><br>
+        Example: https://image-api-fcc.glitch.me/search/carrotcake?offset=2<br><br>
+        That's not all! You can see the most recent searches but making a http request to https://image-api-fcc.glitch.me/recent.<br>
+        You can even adjust how many results you see with the "?queries=[number]" query.<br><br>
+        Example: https://image-api-fcc.glitch.me/recent?queries=2<br><br>
+        What are you waiting for? Give it a go!
+      </p>
+      
+      <section class="dreams">
+        <ul id="dreams"></ul>
+      </section>
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+  </body>
+</html>
